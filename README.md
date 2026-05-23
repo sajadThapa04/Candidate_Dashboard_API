@@ -1,6 +1,6 @@
-# TechKraft Candidate Review Dashboard
+#  Candidate Review Dashboard
 
-This is a small internal recruiting dashboard built for the TechKraft take-home assignment. It gives reviewers a place to browse candidates, submit category scores, and generate a mock AI summary. Admins get the extra operational view: all reviewers' scores plus internal notes.
+This is a small internal recruiting dashboard built for the  take-home assignment. It gives reviewers a place to browse candidates, submit category scores, and generate a mock AI summary. Admins get the extra operational view: all reviewers' scores plus internal notes.
 
 The app is split into a FastAPI backend and a React/Vite frontend.
 
@@ -17,8 +17,8 @@ These users are seeded automatically when the backend starts:
 
 | Role | Email | Password |
 | --- | --- | --- |
-| Admin | `admin@techkraft.dev` | `Password123!` |
-| Reviewer | `reviewer@techkraft.dev` | `Password123!` |
+| Admin | `admin@.dev` | `Password123!` |
+| Reviewer | `reviewer@.dev` | `Password123!` |
 
 Registration is intentionally locked to the `reviewer` role. The API never accepts a role from the client during registration.
 
@@ -95,7 +95,7 @@ Login as admin:
 ```bash
 curl -X POST http://127.0.0.1:8000/auth/login \
   -H "Content-Type: application/json" \
-  -d '{"email":"admin@techkraft.dev","password":"Password123!"}'
+  -d '{"email":"admin@.dev","password":"Password123!"}'
 ```
 
 Save the returned token:
